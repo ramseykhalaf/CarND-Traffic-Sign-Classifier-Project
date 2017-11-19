@@ -11,7 +11,7 @@ def download(url, file):
     """
     if not os.path.isfile(file):
         print('Downloading ' + file + '...')
-        urlretrieve(url, file)
+        urllib.request.urlretrieve(url, file)
         print('Download Finished')
     else:
         print("File exists '{}' - skipping".format(file))
