@@ -3,6 +3,8 @@ services:
   python-env:
     image: udacity/carnd-term1-starter-kit
     ports:
-      - "8888:8888"
+      - "8891:8891"
+    environment:
+      - PORT=8891
     volumes:
       - ".:/src"
